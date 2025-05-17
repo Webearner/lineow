@@ -32,7 +32,7 @@ export default function Dashboard() {
             <div>
               <h2 className="text-base font-medium">Today Balance</h2>
               <p className="text-2xl font-bold">₦{user.balance.toLocaleString()}</p>
-              <p className="text-xs">Weekly Rewards: ₦ 200,000</p>
+              <p className="text-xs">Weekly Rewards: ₦ 180,000</p>
             </div>
             <button
               onClick={() => router.push("/withdraw")}

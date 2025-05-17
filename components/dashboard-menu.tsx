@@ -44,7 +44,7 @@ export default function DashboardMenu() {
     {
       icon: <span className="text-xl">🌐</span>,
       label: "Group",
-      href: "https://whatsapp.com/channel/0029VbA8ZHsL7UVVM0zP1L1o",
+      href: "https://whatsapp.com/channel/0029VakAHcnEKyZFc7Mc9V06",
       external: true,
     },
     {

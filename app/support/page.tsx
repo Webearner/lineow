@@ -32,7 +32,7 @@ export default function SupportPage() {
             <h3 className="font-bold text-lg mb-1">PayGo Finance</h3>
             <p className="text-gray-500 text-sm mb-4">Official WhatsApp Channel</p>
             <button
-              onClick={() => window.open(https://chat.whatsapp.com/Jf8tG61UCe2FdjbP6d6Szc", "_blank")}
+              onClick={() => window.open("https://whatsapp.com/channel/0029VakAHcnEKyZFc7Mc9V06", "_blank")}
               className="bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-6 rounded-full flex items-center gap-2 transition-colors"
             >
               <MessageCircle className="h-5 w-5" />
