@@ -99,7 +99,7 @@ export default function PayIdPaymentPage() {
 
             <div className="mb-4">
               <p className="text-gray-600">Bank Name</p>
-              <p className="font-bold">DOT PAY</p>
+              <p className="font-bold">DOTPAY</p>
             </div>
 
             <div>
