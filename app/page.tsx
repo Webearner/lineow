@@ -1,14 +1,31 @@
-export const dynamic = "force-static"
+"use client"
+
+import { useEffect } from "react"
+import { useRouter } from "next/navigation"
+import { useAuth } from "@/hooks/use-auth"
+import { Logo } from "@/components/logo"
 
 export default function Home() {
-  return <div style={{ display: "none" }}>Redirecting to PayGo Finance...</div>
-}
+  const router = useRouter()
+  const { user } = useAuth()
 
-// This ensures the page is redirected on the client side as well
-export function generateMetadata() {
-  return {
-    metadataBase: new URL("https://paygo-finance.vercel.app"),
-    title: "PayGo Finance",
-    description: "Redirecting to PayGo Finance",
-  }
+  useEffect(() => {
+    if (user) {
+      router.push("/dashboard")
+    } else {
+      router.push("/login")
+    }
+  }, [user, router])
+
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-center p-6 bg-[#f8f0f2]">
+      <div className="w-full max-w-md flex flex-col items-center">
+        <Logo className="w-full max-w-xs mb-8" animated />
+        <div className="text-center mb-8">
+          <h1 className="text-2xl font-bold mb-4 text-purple-900">Welcome to PayGo!</h1>
+          <p className="text-lg text-gray-600">Loading...</p>
+        </div>
+      </div>
+    </main>
+  )
 }
