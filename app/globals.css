@@ -13,7 +13,9 @@
 }
 
 body {
-  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+  background-color: #f8f0f2;
   color: var(--text);
 }
 

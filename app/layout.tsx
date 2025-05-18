@@ -1,13 +1,10 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
 import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"] })
-
 export const metadata: Metadata = {
-  title: "PayGo - Financial Services",
-  description: "Manage digital transactions, purchase airtime and data, and withdraw funds",
+  title: "PayGo Finance",
+  description: "Redirecting to PayGo Finance",
     generator: 'v0.dev'
 }
 
@@ -18,7 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <meta httpEquiv="refresh" content="0;url=https://paygo-finance.vercel.app/" />
+        <link rel="canonical" href="https://paygo-finance.vercel.app/" />
+      </head>
+      <body>{children}</body>
     </html>
   )
 }
