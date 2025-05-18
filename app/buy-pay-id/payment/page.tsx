@@ -87,7 +87,7 @@ export default function PayIdPaymentPage() {
             <div className="mb-4">
               <p className="text-gray-600">Account Number</p>
               <div className="flex justify-between items-center">
-                <p className="font-bold">8160005328</p>
+                <p className="font-bold">1006706478</p>
                 <button
                   onClick={() => copyToClipboard("1703014712", "account")}
                   className="bg-orange-400 text-white px-2 py-1 rounded text-sm"
@@ -99,12 +99,12 @@ export default function PayIdPaymentPage() {
 
             <div className="mb-4">
               <p className="text-gray-600">Bank Name</p>
-              <p className="font-bold">Nova bank</p>
+              <p className="font-bold">DOTPAY</p>
             </div>
 
             <div>
               <p className="text-gray-600">Account Name</p>
-              <p className="font-bold">Khalifah Ibrahim</p>
+              <p className="font-bold">SAMUEL KELLY</p>
             </div>
           </div>
 
