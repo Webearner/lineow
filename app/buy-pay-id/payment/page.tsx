@@ -89,7 +89,7 @@ export default function PayIdPaymentPage() {
               <div className="flex justify-between items-center">
                 <p className="font-bold">5026987248</p>
                 <button
-                  onClick={() => copyToClipboard("8160005328", "account")}
+                  onClick={() => copyToClipboard("5026987248", "account")}
                   className="bg-orange-400 text-white px-2 py-1 rounded text-sm"
                 >
                   {copiedAccount ? "Copied" : "Copy"}
